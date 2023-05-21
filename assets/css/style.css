@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #FFB900;
+    --font-heading: Sen, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    padding: 0 16px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #171100;
+    border-radius: 999px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.main-content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+}
+
+/* Header */
+.header {
+    background: #FFFCF4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -20px;
+    z-index: 1;
+}
+
+.body-header {
+    display: flex;
+    align-items: center;
+    padding: 32px 0 8px;
+}
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    position: relative;
+    padding: 8px 21px;
+    font-size: 1.6rem;
+    color: #5F5B53;
+}
+
+.nav a:hover,
+.nav li.active a {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.nav li.active a::after {
+    content: "";
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    display: block;
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+}
+
+.header .signup {
+    min-width: 144px;
+}
+
+.header .action {
+    margin-left: 49px;
+}
+
+/* Hero */
+.hero {
+    background: #FFFCF4;
+    height: 810px;
+    padding-top: 56px;
+}
+
+.hero .body-hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* media block */
+.hero .media-block {
+    width: 48%;
+    position: relative;
+}
+
+.hero .media-block .img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero .courses-block {
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    width: 270px;
+    padding: 28px 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.hero .courses-block .item {
+    display: flex;  
+}
+
+.hero .courses-block .item + .item {
+    margin-top: 22px;
+}
+
+.hero .courses-block .item .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FFF9E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .courses-block .item:nth-child(2) .icon {
+    background: #FCEFFF;
+}
+
+.hero .courses-block .item:nth-child(3) .icon {
+    background: #EBEAFF;
+}
+
+.hero .courses-block .info {
+    margin-left: 16px;
+}
+
+.hero .info .title {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5F5B53;
+}
+
+.hero .label {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+/* content-block */
+.hero .content-block {
+    width: 52%;
+    padding-top: 64px;
+    padding-left: 130px;
+}
+
+.content-block .heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.content-block .desc {
+    margin: 22px 0;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5F5B53;
+}
+
+.content-block .num:nth-child(2) {
+    margin-left: 28px;
+}
+
+.content-block .cta-group {
+    margin: 38px 0 38px;
+    display: flex;
+    align-items: center;
+}
+
+.content-block .cta-group .hero-cta {
+    min-width: 180px;
+    line-height: 64px;
+    background-color: var(--primary-color);
+}
+
+.content-block .watch-video {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.content-block .watch-video .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.content-block .watch {
+    margin-left: 14px;
+}
+
+.content-block .sup {
+    margin-top: -14px;
+    margin-left: -28px;
+}
+
+.content-block .num {
+    font-family: var(--font-heading);
+    padding: 0 8px 0 28px;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    color: #171100;
+}
