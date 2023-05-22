@@ -104,8 +104,8 @@ a {
 /* Hero */
 .hero {
     background: #FFFCF4;
-    height: 810px;
-    padding-top: 56px;
+    /* height: 810px; */
+    padding: 56px 0 65px;
 }
 
 .hero .body-hero {
@@ -124,6 +124,7 @@ a {
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
+    vertical-align: bottom;
 }
 
 .hero .courses-block {
@@ -131,7 +132,7 @@ a {
     right: 0;
     bottom: 48px;
     width: 270px;
-    padding: 28px 24px;
+    padding: 24px;
     background: #FFFFFF;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
@@ -139,6 +140,7 @@ a {
 
 .hero .courses-block .item {
     display: flex;  
+    align-items: center;
 }
 
 .hero .courses-block .item + .item {
