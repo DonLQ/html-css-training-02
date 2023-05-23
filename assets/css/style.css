@@ -58,6 +58,10 @@ a {
     --line-clamp: 2;
 }
 
+.line-clamp.line-4 {
+    --line-clamp: 4;
+}
+
 .break-all {
     word-break: break-all;
 }
@@ -85,8 +89,15 @@ a {
     line-height: 1.67;
 }
 
+.heading.lv4 {
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #F7F7F7;
+}
+
 /* desc */
 .desc {
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.67;
@@ -108,8 +119,15 @@ a {
     font-size: 1.6rem;
     line-height: 1.75;
     color: #FEA31B;
-
 }
+
+.desc.comment {
+    font-style: italic;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #FFFFFF;
+}
+
 /* img */
 .img {
     width: 470px;
@@ -406,7 +424,67 @@ a {
     justify-content: space-between;
 }
 
+/* Feed back */
+.feed-back {
+    padding: 96px 0;
+    background: #2E2100;
+    display: flex;
+}
 
+.feed-back .body-fb {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.feed-back .customer {
+    width: 34%;
+    max-width: 159px;
+}
+
+.feed-back .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feed-back .name {
+    margin-top: 18px;
+}
+
+.feed-back .department {
+    margin: 4px 0 0;
+}
+
+.feed-back .dots-list {
+    display: flex;
+    margin-top: 28px;
+    gap: 6px;
+}
+
+.feed-back .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.feed-back .dot:hover {
+    background: var(--primary-color);
+}
+
+.feed-back .feel {
+    width: 66%;
+    margin-left: 241px;
+}
+
+.feed-back .feel blockquote {
+    max-width: 770px;
+    min-height: 160px;
+    margin-left: 30px;
+}
 
 
 
